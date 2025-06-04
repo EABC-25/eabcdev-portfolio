@@ -1,42 +1,78 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* SECTIONS LAYOUT */
+
+.page-section {
+  height: 100dvh;
+  width: 100%;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.even-section {
+  background-color: #5575cf;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.odd-section {
+  background-color: #64e28e;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.page-container {
+  height: 100%;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 1400px;
+  /* border: solid 1px black; */
+  /* margin is for testing if flex grow and shrink works */
+  /* margin: 0 20px; */
 }
 
-.card {
-  padding: 2em;
+.main-body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.read-the-docs {
-  color: #888;
+.main-header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
 }
+
+.header-btn {
+  background-color: transparent;
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+}
+
+.main-front {
+  height: calc(100dvh - 100px);
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  height: 100%;
+  width: 50%;
+}
+
+.hero.portrait {
+  /* background-image: url("./assets/head_oil_painting.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; */
+  background-color: black;
+}
+
+/* MAIN ONE PAGE LAYOUT */
