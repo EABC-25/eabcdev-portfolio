@@ -1,6 +1,83 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  height: 100dvh;
+  width: 100dvw;
   text-align: center;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  animation: slideUpFade 0.5s ease forwards;
+  /* background-color: black; */
+  /* for testing flex grow-shrink */
+  /* padding: 0 20px; */
+}
+
+@media (min-width: 1280px) {
+  #root {
+    height: 90dvh;
+    max-width: 1280px;
+    margin: 0 auto;
+    flex-basis: 1280px;
+  }
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main {
+  width: 100%;
+  background-color: transparent;
+}
+
+.window {
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  height: 93%;
+  width: 100%;
+  background-color: transparent;
+  animation: slideUpFade 0.5s ease forwards;
+}
+
+.content-div {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+
+.selection {
+  height: 7%;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgb(61, 61, 61, 0.4);
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.selection.sub {
+  background-color: transparent;
+  animation: slideUpFade 0.5s ease forwards;
+}
+
+.selection button:first-child {
+  margin-left: 10px;
+}
+.selection button {
+  margin-right: 10px;
 }
