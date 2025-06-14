@@ -3,7 +3,7 @@
 const Home: React.FC = () => {
   return (
     <div className="content-div">
-      <p className="poppins-black-italic home-title">EABCDEV</p>
+      <p className="poppins-normal home-title">EABCDEV</p>
     </div>
   );
 };

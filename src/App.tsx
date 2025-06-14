@@ -1,7 +1,7 @@
 import "./App.css";
-// import { useState } from "react";
 
 import { type ContentTypes } from "./components/types/types";
+import { useMainGlobalContext } from "./context/GlobalContext";
 import Window from "./components/reusable/Window";
 import Home from "./components/app/Home";
 import About from "./components/app/About";
@@ -29,10 +29,11 @@ const appContent: ContentTypes[] = [
 ];
 
 const App: React.FC = () => {
-  // const [overlayIsActive, setOverlayIsActive] = useState(false);
+  const { state } = useMainGlobalContext();
+
   return (
     <>
-      <Overlay />
+      {state.isOverlayOpen && <Overlay />}
       <main>
         <Window content={appContent} panelType={"main"} />
       </main>

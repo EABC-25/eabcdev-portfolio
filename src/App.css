@@ -1,16 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Exile&display=swap");
+
 #root {
-  height: 100dvh;
-  width: 100dvw;
-  text-align: center;
+  height: 100%;
+  width: 100%;
   display: flex;
-  flex-grow: 1;
-  flex-shrink: 1;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  animation: slideUpFade 0.5s ease forwards;
-  /* background-color: black; */
-  /* for testing flex grow-shrink */
-  /* padding: 0 20px; */
+  align-items: center;
+  justify-content: center;
 }
 
 p,
@@ -32,8 +27,18 @@ h1 {
 }
 
 main {
-  width: 100%;
-  background-color: transparent;
+  height: 100dvh;
+  width: 100dvw;
+  text-align: center;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  animation: slideUpFade 0.5s ease forwards;
+  /* background-color: black; */
+  /* for testing flex grow-shrink */
+  /* padding: 0 20px; */
 }
 
 .page-overlay {
@@ -45,16 +50,53 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.poppins-black-italic {
+.overlay-close {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10px;
+  left: 10px;
+  border-radius: 9999px;
+}
+
+.overlay-media {
+  height: 80%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.exile-regular {
+  font-family: "Exile", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-normal {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
+}
+
+.poppins-italic {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  margin: auto;
 }
 
 .window {
   height: 100%;
   width: 100%;
+  background-color: transparent;
 }
 
 .content {
@@ -130,7 +172,18 @@ li {
   opacity: 0.8;
 }
 
-.y-asset {
+.compareWot-hero {
+  height: 240px;
+  width: 80%;
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 20px auto;
+  opacity: 0.8;
+}
+
+.asset {
   height: 180px;
   width: 100%;
   display: flex;
@@ -140,6 +193,7 @@ li {
   margin: 20px auto;
   padding: 0;
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .asset-container {
@@ -180,10 +234,14 @@ li {
 }
 
 @media (min-width: 700px) {
-  #root {
+  main {
     max-width: 1280px;
     margin: 0 auto;
     flex-basis: 1280px;
+  }
+  .overlay-media {
+    height: 100%;
+    width: 80%;
   }
   .hero-container {
     height: 400px;
@@ -199,6 +257,13 @@ li {
     line-height: 1;
     margin: 0 20px;
   }
+  .compareWot-hero {
+    height: 300px;
+    width: 400px;
+    float: right;
+    line-height: 1;
+    margin: 0 20px;
+  }
   .asset-container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -206,7 +271,7 @@ li {
     padding: 20px;
     gap: 10px;
   }
-  .y-asset {
+  .asset {
     height: 200px;
     width: 400px;
     margin: 0 0;
@@ -214,7 +279,7 @@ li {
 }
 
 @media (min-width: 1280px) {
-  #root {
+  main {
     height: 90dvh;
   }
 }
