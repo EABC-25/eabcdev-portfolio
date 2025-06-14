@@ -32,7 +32,7 @@ const About: React.FC = () => {
             <div className="div-pleft">
               <ol>
                 <li>
-                  <span>Javascript</span>
+                  <span>JavaScript</span>
                 </li>
                 <li>
                   <span>Typescript</span>
@@ -184,21 +184,29 @@ const About: React.FC = () => {
               </div>
             </div>
             <br />
-            <br />
-            <p>
-              If you wish to know more about me, here are some of my other
-              interests:
-            </p>
+            <p>Skills / Others:</p>
             <div className="div-pleft">
               <ol>
-                <li>Learning new things/technologies</li>
-                <li>Reading novels - fiction, historical etc.</li>
-                <li>Watching films, series</li>
-                <li>Working out</li>
-                <li>Gaming - World of Warcraft, MMORPGs etc</li>
+                <li>Computer hardware knowledge</li>
+                <li>Version control basics</li>
+                <li>Basic command line (Windows, Linux) knowledge</li>
+                <li>
+                  Basic networking and VPS server management (Openlitespeed)
+                </li>
+                <li>Firewall and Security basics</li>
+                <li>SSH usage</li>
+                <li>Domain and SSL setup</li>
+                <li>Effective googling</li>
+                <li>Reading/Analyzing documentation</li>
+                <li>Use of AI Tools (ChatGPT)</li>
                 <li>Language learning - Korean (TOPIK 2 certified)</li>
               </ol>
             </div>
+            <br />
+            <p>
+              You can reach me through here:
+              <span>emmanuelalfonsociencia@gmail.com</span>
+            </p>
             <br />
             <br />
             <br />

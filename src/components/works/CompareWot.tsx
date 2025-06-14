@@ -82,6 +82,18 @@ const CompareWot: React.FC = () => {
                 </a>
               </span>
             </p>
+            <p>
+              <span>Code:</span>
+              <span>
+                <a
+                  target="_blank"
+                  href="https://github.com/EABC-25/CompareWOT-app"
+                >
+                  Link
+                </a>
+              </span>
+            </p>
+            <br />
             <br />
             <p>
               <span>Mobile:</span>

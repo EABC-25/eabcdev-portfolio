@@ -89,6 +89,11 @@ const Y: React.FC = () => {
                 </a>
               </span>
             </p>
+            <p>
+              <span>Code:</span>
+              (Repo is set at private for now)
+            </p>
+            <br />
             <br />
             <p>
               <span>Mobile:</span>

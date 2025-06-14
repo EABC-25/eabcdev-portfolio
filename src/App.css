@@ -41,6 +41,23 @@ main {
   /* padding: 0 20px; */
 }
 
+.exile-regular {
+  font-family: "Exile", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-normal {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+
+.poppins-italic {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  margin: auto;
+}
+
 .page-overlay {
   position: absolute;
   height: 100dvh;
@@ -76,21 +93,58 @@ main {
   background-size: contain;
 }
 
-.exile-regular {
-  font-family: "Exile", system-ui;
-  font-weight: 400;
-  font-style: normal;
+.page-sidebar {
+  position: absolute;
+  left: -60px;
+  bottom: 15dvh;
+  height: auto;
+  width: auto;
+  display: flex;
+  background-color: rgb(61, 61, 61);
+  border-radius: 5px;
+  padding: 6px;
+  z-index: 50;
+  transition: all ease-in-out 1s;
 }
 
-.poppins-normal {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
+.page-sidebar.active {
+  transform: translateX(65px);
 }
 
-.poppins-italic {
-  font-family: "Poppins", sans-serif;
-  font-style: italic;
-  margin: auto;
+.sidebar-button {
+  all: unset;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 60px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgb(61, 61, 61, 0.4);
+  cursor: pointer;
+}
+
+.sidebar-logo {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.sidebar-logo a {
+  color: white;
+}
+
+.sidebar-logo:hover {
+  background-color: rgb(61, 61, 61, 0.4);
 }
 
 .window {
