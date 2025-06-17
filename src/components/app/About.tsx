@@ -9,7 +9,7 @@ const About: React.FC = () => {
     <div className="content-div">
       <div className="container">
         <div style={{ marginTop: "30px" }}>
-          <div className="div-pleft">
+          <div className="div-pboth">
             <div
               className="hero-container"
               style={{ backgroundImage: `url(${heroImage})` }}
@@ -76,11 +76,13 @@ const About: React.FC = () => {
                   <li>CSS3</li>
                   <li>Vite</li>
                   <li>React</li>
+                  <li>React-Router</li>
                   <li>Nextjs</li>
                   <li>Tailwind</li>
                   <li>Redux Toolkit-Query</li>
                   <li>Custom Web Components</li>
                   <li>Zod</li>
+                  <li>Production build: Tsc</li>
                 </ol>
               </div>
             </div>
@@ -91,7 +93,20 @@ const About: React.FC = () => {
               </p>
               <div className="div-pleft">
                 <ol>
-                  <li>Nodejs-Express</li>
+                  <li>Nodejs</li>
+                  <li>Express</li>
+                </ol>
+              </div>
+            </div>
+            <br />
+            <div className="div-pleft">
+              <p>
+                <span style={{ color: "#a08a43" }}>Build tools:</span>
+              </p>
+              <div className="div-pleft">
+                <ol>
+                  <li>Vite</li>
+                  <li>Typescript Compiler</li>
                 </ol>
               </div>
             </div>
@@ -167,6 +182,7 @@ const About: React.FC = () => {
                 <ol>
                   <li>Postman</li>
                   <li>Phpmyadmin</li>
+                  <li>Nodemailer</li>
                 </ol>
               </div>
             </div>

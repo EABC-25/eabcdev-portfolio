@@ -19,7 +19,7 @@ const CompareWot: React.FC = () => {
   return (
     <div className="content-div">
       <div className="container">
-        <div style={{ marginTop: "40px" }}>
+        <div style={{ marginTop: "40px", paddingRight: "10px" }}>
           <div
             className="compareWot-hero"
             style={{
@@ -55,12 +55,16 @@ const CompareWot: React.FC = () => {
             </p>
             <br />
             <p>
-              <span>Technologies used:</span>
+              <span>Tools used:</span>
             </p>
             <div className="div-pleft">
               <p>
                 <span style={{ color: "#4571a3" }}>Frontend: </span>
-                <span>Vite, React, Redux Toolkit-Query, CSS3, Axios</span>
+                <span>React, Redux Toolkit-Query, CSS3, Axios</span>
+              </p>
+              <p>
+                <span style={{ color: "#a08a43" }}>Build tools: </span>
+                <span>Vite</span>
               </p>
               <p>
                 <span style={{ color: "#794776" }}>Version Control: </span>

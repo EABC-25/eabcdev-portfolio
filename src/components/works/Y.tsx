@@ -23,7 +23,7 @@ const Y: React.FC = () => {
   return (
     <div className="content-div">
       <div className="container">
-        <div style={{ marginTop: "40px" }}>
+        <div style={{ marginTop: "40px", paddingRight: "10px" }}>
           <div
             className="y-hero"
             style={{
@@ -45,19 +45,23 @@ const Y: React.FC = () => {
             </p>
             <br />
             <p>
-              <span>Technologies used:</span>
+              <span>Tools used:</span>
             </p>
             <div className="div-pleft">
               <p>
                 <span style={{ color: "#4571a3" }}>Frontend: </span>
                 <span>
-                  Typescript, Vite, React, Redux Toolkit-Query, CSS3, Tailwind,
-                  Custom Web Components, Zod
+                  Typescript, React, React-router, Redux Toolkit-Query, CSS3,
+                  Tailwind, Custom Web Components, Zod
                 </span>
               </p>
               <p>
                 <span style={{ color: "#865353" }}>Backend: </span>
                 <span>Typescript, Nodejs, Express</span>
+              </p>
+              <p>
+                <span style={{ color: "#a08a43" }}>Build tools: </span>
+                <span>Vite, Typescript Compiler</span>
               </p>
               <p>
                 <span style={{ color: "#4d8a5c" }}>Database: </span>
@@ -83,17 +87,29 @@ const Y: React.FC = () => {
           <div className="div-pleft">
             <p>
               <span>Link to project:</span>
-              <span>
+            </p>
+            <div className="div-pleft">
+              <p>
+                Frontend:{" "}
                 <a target="_blank" href="https://y-app.eabcdev.com">
                   y-app.eabcdev.com
                 </a>
-              </span>
-            </p>
+              </p>
+              <p>
+                Backend:{" "}
+                <a
+                  target="_blank"
+                  href="https://twitter-clone-backend.eabcdev.com"
+                >
+                  twitter-clone-backend.eabcdev.com
+                </a>
+              </p>
+            </div>
+            <br />
             <p>
               <span>Code:</span>
               (Repo is set at private for now)
             </p>
-            <br />
             <br />
             <p>
               <span>Mobile:</span>
