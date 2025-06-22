@@ -32,17 +32,43 @@ const Y: React.FC = () => {
           />
           <div className="div-pleft">
             <p>
-              <span className="exile-regular">Y?</span> is a personal project
-              that took inspiration from the social media app that we know named
-              X. This project is mostly an attempt to reproduce X's basic
-              features and aims to give users at the very least a bare bones
-              feel of a social media app via my version (clone) of X's UI. The
-              development of this app took 7 - 8 mos to complete through trial
-              and error/experimentation with many different libraries,
-              frameworks, and ideas - one example is the use of custom web
-              components in typescript which helped me build this app's rich
-              text input and some other components.
+              <span className="exile-regular">Y?</span> is a full-stack web app
+              inspired by the social media platform X. This project reproduces
+              X's core features and provides users with a functional, minimal
+              clone of X's user experience and UI. This is a solo project that
+              helped me learn a lot of things about frontend - backend
+              development and deployment that took months to complete.
             </p>
+            <br />
+            <p>
+              Users of this app can create their personal accounts,
+              create-delete posts and replies, follow and be followed by another
+              user, upload profile/header photos, update user information etc.
+            </p>
+            <br />
+            <ol>
+              <li>
+                Developed with TypeScript for type safety and Zod for data
+                validation
+              </li>
+              <li>
+                RTK Query handles efficient data fetching and caching from a
+                Node.js backend that follows RESTful API principles and uses a
+                MySQL database for relational data storage, hosted alongside the
+                backend for low-latency access.
+              </li>
+              <li>
+                Secured backend communication with CORS, HTTP-only cookies,
+                security headers (Helmet), proper proxy trust configuration for
+                secure header forwarding.
+              </li>
+              <li>
+                Deployed on a Hostinger Linux VPS using OpenLiteSpeed as a
+                reverse proxy and process manager for secure and efficient
+                backend and frontend delivery.
+              </li>
+              <li>Optimized for Mobile and Desktop screen sizes.</li>
+            </ol>
             <br />
             <p>
               <span>Tools used:</span>
@@ -86,7 +112,7 @@ const Y: React.FC = () => {
           <br />
           <div className="div-pleft">
             <p>
-              <span>Link to project:</span>
+              <span>Live Demo:</span>
             </p>
             <div className="div-pleft">
               <p>
@@ -102,7 +128,8 @@ const Y: React.FC = () => {
                   href="https://twitter-clone-backend.eabcdev.com"
                 >
                   twitter-clone-backend.eabcdev.com
-                </a>
+                </a>{" "}
+                (redirects to health check route)
               </p>
             </div>
             <br />

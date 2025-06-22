@@ -28,21 +28,21 @@ const CompareWot: React.FC = () => {
           />
           <div className="div-pleft">
             <p>
-              <span>CompareWOT?</span> is an app where you can compare tanks
-              from the game - World of Tanks. Users can add their chosen tank
-              and configure its modules like the gun, engine, track, turret etc.
-              which will then change the default stats (damage per minute, move
-              speed, reloading speed, armor etc.) of the tank. These stats are
-              reflected on a spreadsheet like table and then users can compare
-              the chosen tanks whether it has better (green) or worse (red)
-              stats. In the game, players can pick their tank, modify the
-              modules and battle it out in a given map where the team with the
-              best tanks will have a higher chance of winning.
+              <span>CompareWOT?</span> • is a frontend web app for comparing
+              tank statistics from the game <span>World of Tanks.</span> Users
+              can add their chosen tank and configure its modules like the gun,
+              engine, track, turret etc. which will then change the default
+              stats (damage per minute, move speed, reloading speed, armor etc.)
+              of the tank. These stats are reflected on a spreadsheet like table
+              and then users can compare the chosen tanks whether it has better
+              (green) or worse (red) stats. In the game, players can pick their
+              tank, modify the modules and battle it out in a given map where
+              the team with the best tanks will have a higher chance of winning.
             </p>
             <br />
             <p>
-              This project is a minified version of the compare feature of this
-              website{" "}
+              This web app is a single page react app and minified version of
+              the compare feature of this website{" "}
               <a target="_blank" href="https://tanks.gg/compare">
                 tanks.gg/compare
               </a>{" "}
@@ -51,7 +51,8 @@ const CompareWot: React.FC = () => {
               the World of Tanks API:{" "}
               <a target="_blank" href="https://developers.wargaming.net/">
                 developers.wargaming.net
-              </a>
+              </a>{" "}
+              with the help of RTK Query for fetching and caching.
             </p>
             <br />
             <p>
@@ -79,7 +80,7 @@ const CompareWot: React.FC = () => {
           <br />
           <div className="div-pleft">
             <p>
-              <span>Link to project:</span>
+              <span>Live Demo:</span>
               <span>
                 <a target="_blank" href="https://compare-wot-app.vercel.app/">
                   compare-wot-app.vercel.app

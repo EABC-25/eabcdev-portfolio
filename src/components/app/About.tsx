@@ -82,7 +82,6 @@ const About: React.FC = () => {
                   <li>Redux Toolkit-Query</li>
                   <li>Custom Web Components</li>
                   <li>Zod</li>
-                  <li>Production build: Tsc</li>
                 </ol>
               </div>
             </div>
