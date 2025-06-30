@@ -51,11 +51,11 @@ const Y: React.FC = () => {
                 Developed with TypeScript for type safety and Zod for data
                 validation
               </li>
+              <li>RTK Query handles efficient data fetching and caching</li>
               <li>
-                RTK Query handles efficient data fetching and caching from a
-                Node.js backend that follows RESTful API principles and uses a
-                MySQL database for relational data storage, hosted alongside the
-                backend for low-latency access.
+                Backed by a Node.js backend that follows RESTful API principles
+                and uses a MySQL database for relational data storage, hosted
+                alongside the backend for low-latency access.
               </li>
               <li>
                 Secured backend communication with CORS, HTTP-only cookies,
@@ -107,6 +107,11 @@ const Y: React.FC = () => {
                   Hostinger Ubuntu Linux VPS with Nodejs and Openlitespeed
                 </span>
               </p>
+              <p>
+                <span style={{ color: "#683096" }}>Testing</span>(Backend):
+                <span>Jest</span>(Unit testing),
+                <span>Jest + SuperTest</span>(Integration testing)
+              </p>
             </div>
           </div>
           <br />
@@ -134,9 +139,22 @@ const Y: React.FC = () => {
             </div>
             <br />
             <p>
-              <span>Code:</span>
-              (Repo is set at private for now)
+              <span>Repo:</span>
             </p>
+            <div className="div-pleft">
+              <p>
+                Frontend:<span>(set at private for now)</span>
+              </p>
+              <p>
+                Backend:{" "}
+                <a
+                  target="_blank"
+                  href="https://github.com/EABC-25/twitter-clone-backend"
+                >
+                  github.com/EABC-25/twitter-clone-backend
+                </a>
+              </p>
+            </div>
             <br />
             <p>
               <span>Mobile:</span>

@@ -17,12 +17,13 @@ const About: React.FC = () => {
             <p>
               Hi, my name is <span>Emmanuel A. B. Ciencia</span>
             </p>
-            <p>Rookie Fullstack Developer from the Philippines.</p>
+            <p>Fullstack Developer from the Philippines.</p>
             <br />
             <p>
-              {`I started coding ${yearsPassed} years ago (June 2022) averaging around 3 hours per day - slowly building the
-          knowledge from books to online resources and of course through
-          personal projects.`}
+              I started my coding journey
+              <span>{`${yearsPassed} years ago (June 2022)`}</span>averaging
+              around 3 hours per day - slowly building the knowledge from books
+              to online resources and of course through personal projects.
             </p>
             <br />
             <p>
@@ -92,7 +93,7 @@ const About: React.FC = () => {
               </p>
               <div className="div-pleft">
                 <ol>
-                  <li>Nodejs</li>
+                  <li>Node.js</li>
                   <li>Express</li>
                 </ol>
               </div>
@@ -165,6 +166,8 @@ const About: React.FC = () => {
               <div className="div-pleft">
                 <ol>
                   <li>JUnit</li>
+                  <li>Jest</li>
+                  <li>SuperTest</li>
                   <li>VSCode Debugger</li>
                   <li>Chrome devtools</li>
                   <li>Redux devtools</li>
