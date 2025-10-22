@@ -1,10 +1,6 @@
 import heroImage from "../../assets/hero.png";
 
 const About: React.FC = () => {
-  const yearStarted: number = 2022;
-  const yearNow: number = new Date().getFullYear();
-  const yearsPassed = yearNow - yearStarted;
-
   return (
     <div className="content-div">
       <div className="container">
@@ -14,22 +10,17 @@ const About: React.FC = () => {
               className="hero-container"
               style={{ backgroundImage: `url(${heroImage})` }}
             />
-            <p>
-              Hi, my name is <span>Emmanuel A. B. Ciencia</span>
-            </p>
-            <p>Fullstack Developer from the Philippines.</p>
             <br />
             <p>
-              I started my coding journey
-              <span>{`${yearsPassed} years ago (June 2022)`}</span>averaging
-              around 3 hours per day - slowly building the knowledge from books
-              to online resources and of course through personal projects.
+              Hi, I'm
+              <span>eabcdev! - Computer Programming Enthusiast</span> who loves
+              to build, break, and rebuild things until they’re just right. I’m
+              fascinated by how simple code can create meaningful experiences —
+              and I’m always tinkering with new ideas to learn something new
+              every day.
             </p>
             <br />
-            <p>
-              Here are the <span>programming languages </span> that I've worked
-              with the most:
-            </p>
+            <p>In my coding journey, I've worked with the below the most:</p>
             <div className="div-pleft">
               <ol>
                 <li>
@@ -46,7 +37,7 @@ const About: React.FC = () => {
 
             <br />
             <p>
-              These are languages that I have basic-intermediate working
+              While these are languages that I have basic-intermediate working
               knowledge:
             </p>
             <div className="div-pleft">
@@ -55,17 +46,20 @@ const About: React.FC = () => {
                   <span>Python</span>
                 </li>
                 <li>
-                  <span>Core Java</span>
+                  <span>Java</span>
                 </li>
                 <li>
                   <span>C++</span>
+                </li>
+                <li>
+                  <span>C</span>
                 </li>
               </ol>
             </div>
             <br />
             <p>
-              Alongside these programming languages - I have also made use of
-              the below technologies/frameworks:
+              I have also made use of the below technologies/frameworks on my
+              personal projects:
             </p>
             <div className="div-pleft">
               <p>
@@ -202,28 +196,20 @@ const About: React.FC = () => {
               </div>
             </div>
             <br />
-            <p>Skills / Others:</p>
+            <p>Others:</p>
             <div className="div-pleft">
               <ol>
                 <li>Computer hardware knowledge</li>
-                <li>Version control basics</li>
-                <li>Basic command line (Windows, Linux) knowledge</li>
-                <li>
-                  Basic networking and VPS server management (Openlitespeed)
-                </li>
-                <li>Firewall and Security basics</li>
-                <li>SSH usage</li>
-                <li>Domain and SSL setup</li>
-                <li>Effective googling</li>
-                <li>Reading/Analyzing documentation</li>
-                <li>Use of AI Tools (ChatGPT)</li>
-                <li>Language learning - Korean (TOPIK 2 certified)</li>
+                <li>Command line (Windows, Linux) knowledge</li>
+                <li>Networking and VPS management</li>
+                <li>AI Tools Usage (ChatGPT)</li>
+                <li>한극말 - Korean Language Proficient (TOPIK 2 certified)</li>
               </ol>
             </div>
             <br />
             <p>
               You can reach me through here:
-              <span>emmanuelalfonsociencia@gmail.com</span>
+              <span>eabcdev@gmail.com</span>
             </p>
             <br />
             <br />

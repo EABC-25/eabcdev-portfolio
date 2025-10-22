@@ -1,7 +1,6 @@
 import { useState } from "react";
 import clsx from "clsx";
 
-import resume from "../../assets/resume/eabcdev_2025.pdf";
 import {
   FaLinkedin,
   FaGithub,
@@ -12,16 +11,6 @@ import {
 
 const Sidebar: React.FC = () => {
   const [sidebarActive, setSidebarActive] = useState(false);
-
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = resume;
-    link.download = "eabcdev_2025.pdf";
-
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
 
   return (
     <div
@@ -47,9 +36,7 @@ const Sidebar: React.FC = () => {
           <button
             type="button"
             onClick={() => {
-              if (confirm("Would you like to download my resume?")) {
-                handleDownload();
-              }
+              alert("Please send me an email at eabcdev@gmail.com!");
             }}
           >
             <FaDownload />
