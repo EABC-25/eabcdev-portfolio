@@ -1,46 +1,34 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import "./App.css";
 
-import { type ContentTypes } from "./components/types/types";
-import { useMainGlobalContext } from "./context/GlobalContext";
-import Window from "./components/reusable/Window";
+import MainLayout from "./components/layouts/MainLayout";
 import Home from "./components/app/Home";
-import About from "./components/app/About";
-import Works from "./components/app/Works";
-import Overlay from "./components/app/Overlay";
-import Sidebar from "./components/app/Sidebar";
-import { TbCircleLetterE } from "react-icons/tb";
-import { IoPersonOutline, IoFolderOutline } from "react-icons/io5";
+import Projects from "./components/app/Projects";
+import CompareWot from "./components/works/CompareWot";
+import Y from "./components/works/Y";
 
-const appContent: ContentTypes[] = [
+const router = createBrowserRouter([
   {
-    id: "appHome",
-    icon: <TbCircleLetterE />,
-    component: <Home />,
+    path: "/",
+    element: <MainLayout />,
+    errorElement: <div>ERROR</div>,
+    children: [
+      { index: true, element: <Home /> },
+      {
+        path: "projects",
+        element: <Projects />,
+        children: [
+          { index: true, path: "compare-wot-app", element: <CompareWot /> },
+          { path: "y-app", element: <Y /> },
+        ],
+      },
+    ],
   },
-  {
-    id: "appAbout",
-    icon: <IoPersonOutline />,
-    component: <About />,
-  },
-  {
-    id: "appWorks",
-    icon: <IoFolderOutline />,
-    component: <Works />,
-  },
-];
+]);
 
 const App: React.FC = () => {
-  const { state } = useMainGlobalContext();
-
-  return (
-    <>
-      {state.isOverlayOpen && <Overlay />}
-      <Sidebar />
-      <main>
-        <Window content={appContent} panelType={"main"} />
-      </main>
-    </>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;

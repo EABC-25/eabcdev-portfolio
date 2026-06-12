@@ -148,7 +148,14 @@ main {
   background-color: rgb(61, 61, 61, 0.4);
 }
 
+/* TOBEDEPRECIATED */
 .window {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+
+.main-layout {
   height: 100%;
   width: 100%;
   background-color: transparent;
@@ -172,12 +179,14 @@ main {
 .home-title {
   font-size: 4rem;
   margin: auto;
+  /* margin: auto; */
 }
 
 .container {
   display: flex;
   flex-direction: column;
   height: 98%;
+  width: 100%;
   /* border: 1px solid black; */
   overflow-y: scroll;
 }
@@ -205,14 +214,14 @@ li {
   font-weight: 500;
 }
 
-.hero-container {
+.hero-image-div {
   height: 400px;
-  width: 80%;
+  width: 100%;
   display: flex;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  margin: 20px auto;
+  /* margin: 20px auto; */
   opacity: 0.6;
 }
 
@@ -302,13 +311,13 @@ li {
     height: 100%;
     width: 80%;
   }
-  .hero-container {
+  /* .hero-container {
     height: 400px;
     width: 400px;
     float: right;
     line-height: 1;
     margin: 0 20px;
-  }
+  } */
   .y-hero {
     height: 300px;
     width: 400px;

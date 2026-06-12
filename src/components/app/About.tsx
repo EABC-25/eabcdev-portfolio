@@ -7,11 +7,11 @@ const About: React.FC = () => {
         <div style={{ marginTop: "30px" }}>
           <div className="div-pboth">
             <div
-              className="hero-container"
+              className="hero-image-div"
               style={{ backgroundImage: `url(${heroImage})` }}
             />
             <br />
-            <p>
+            {/* <p>
               Hi, I'm
               <span>eabcdev! - Computer Programming Enthusiast</span> who loves
               to build, break, and rebuild things until they’re just right. I’m
@@ -213,7 +213,7 @@ const About: React.FC = () => {
             </p>
             <br />
             <br />
-            <br />
+            <br /> */}
           </div>
         </div>
       </div>

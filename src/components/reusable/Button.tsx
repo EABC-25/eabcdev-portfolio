@@ -1,24 +1,17 @@
 import { type JSX } from "react";
-import clsx from "clsx";
+import { NavLink } from "react-router";
 
 interface Props {
-  tabName?: string;
-  icon?: JSX.Element;
-  fncState: number;
-  fnc: React.Dispatch<React.SetStateAction<number>>;
-  fncIdx: number;
+  id: string;
+  icon: JSX.Element;
+  originRoute: string;
 }
 
-const Button: React.FC<Props> = ({ tabName, icon, fncState, fnc, fncIdx }) => {
+const Button: React.FC<Props> = ({ originRoute, id, icon }) => {
   return (
-    <button
-      className={clsx("", { focus: fncState === fncIdx })}
-      type="button"
-      onClick={() => fnc(fncIdx)}
-    >
-      {icon && <div>{icon}</div>}
-      {tabName && <p>{tabName}</p>}
-    </button>
+    <NavLink to={`${originRoute}${id}`}>
+      <button type="button">{icon && <div>{icon}</div>}</button>
+    </NavLink>
   );
 };
 

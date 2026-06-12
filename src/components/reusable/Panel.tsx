@@ -1,29 +1,29 @@
-import { useState } from "react";
-
-import { type ContentTypes } from "../types/types";
+import { type JSX } from "react";
 import Button from "./Button";
 
+type ContentTypes = {
+  id: string;
+  tabName?: string;
+  icon: JSX.Element;
+};
+
 interface Props {
+  originRoute: string;
   content: ContentTypes[];
   panelType: "main" | "sub";
 }
 
-const Panel: React.FC<Props> = ({ content, panelType }) => {
-  const [activeTab, setActiveTab] = useState<number>(0);
-
+const Panel: React.FC<Props> = ({ originRoute, content, panelType }) => {
   return (
     <>
-      <div className="content">{content[activeTab].component}</div>
       <div className={`selection ${panelType}`}>
-        {content.map((c, idx) => {
+        {content.map(c => {
           return (
             <Button
               key={c.id}
-              tabName={c.tabName}
+              originRoute={originRoute}
+              id={c.id}
               icon={c.icon}
-              fncState={activeTab}
-              fnc={setActiveTab}
-              fncIdx={idx}
             />
           );
         })}
