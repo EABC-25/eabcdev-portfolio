@@ -1,11 +1,5 @@
-import { type JSX } from "react";
 import Button from "./Button";
-
-type ContentTypes = {
-  id: string;
-  tabName?: string;
-  icon: JSX.Element;
-};
+import { type ContentTypes } from "../types/types";
 
 interface Props {
   originRoute: string;

@@ -1,17 +1,11 @@
-import { type JSX } from "react";
 import { Outlet } from "react-router";
 import { GiTank } from "react-icons/gi";
 import { TbHexagonLetterY, TbDots, TbSql } from "react-icons/tb";
 
+import { type ContentTypes } from "../types/types";
 import Panel from "../reusable/Panel";
 
-type ContentTypes = {
-  id: string;
-  tabName?: string;
-  icon: JSX.Element;
-};
-
-const worksContent: ContentTypes[] = [
+const projectsContent: ContentTypes[] = [
   {
     id: "compare-wot-app",
     icon: <GiTank />,
@@ -38,7 +32,7 @@ const Projects: React.FC = () => {
         <Outlet />
 
         <Panel
-          content={worksContent}
+          content={projectsContent}
           originRoute={originRoute}
           panelType={"sub"}
         />

@@ -1,15 +1,9 @@
-import { type JSX } from "react";
 import { Outlet } from "react-router";
 import { TbCircleLetterE } from "react-icons/tb";
 import { IoFolderOutline } from "react-icons/io5";
 
+import { type ContentTypes } from "../types/types";
 import Panel from "../reusable/Panel";
-
-type ContentTypes = {
-  id: string;
-  tabName?: string;
-  icon: JSX.Element;
-};
 
 const appContent: ContentTypes[] = [
   {
