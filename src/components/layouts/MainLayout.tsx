@@ -13,7 +13,7 @@ type ContentTypes = {
 
 const appContent: ContentTypes[] = [
   {
-    id: "/",
+    id: "",
     icon: <TbCircleLetterE />,
   },
   {

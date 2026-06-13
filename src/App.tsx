@@ -19,7 +19,7 @@ const router = createBrowserRouter([
         path: "projects",
         element: <Projects />,
         children: [
-          { index: true, path: "compare-wot-app", element: <CompareWot /> },
+          { path: "compare-wot-app", element: <CompareWot /> },
           { path: "y-app", element: <Y /> },
         ],
       },

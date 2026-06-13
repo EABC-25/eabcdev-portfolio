@@ -286,10 +286,33 @@ li {
   animation: slideUpFade 0.5s ease forwards;
 }
 
-.selection button:first-child {
+.navLink-inherit-btn-styles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  /* border: 1px solid transparent; */
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  color: white;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  /* transition: border-color 0.25s; */
+}
+
+.navLink-inherit-btn-styles:hover,
+.navLink-inherit-btn-styles:focus,
+.navLink-inherit-btn-styles.focus {
+  color: white;
+  background-color: rgba(114, 113, 113, 0.2);
+}
+
+.selection .navLink-inherit-btn-styles:first-child {
   margin-left: 10px;
 }
-.selection button {
+.selection .navLink-inherit-btn-styles {
   margin-right: 10px;
 }
 

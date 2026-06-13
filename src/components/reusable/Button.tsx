@@ -1,5 +1,7 @@
 import { type JSX } from "react";
-import { NavLink } from "react-router";
+import clsx from "clsx";
+import { useEffect, useState } from "react";
+import { NavLink, useLocation } from "react-router";
 
 interface Props {
   id: string;
@@ -8,9 +10,34 @@ interface Props {
 }
 
 const Button: React.FC<Props> = ({ originRoute, id, icon }) => {
+  const [focusState, setFocusState] = useState(true);
+  const loc = useLocation();
+
+  useEffect(() => {
+    const pathParams =
+      loc.pathname === "/"
+        ? [""]
+        : loc.pathname.split("/").filter(id => {
+            if (id) return id;
+          });
+
+    if (!pathParams.includes(id)) {
+      console.log(pathParams);
+      setFocusState(false);
+    }
+  }, [loc]);
+
+  const navigateTo = `${originRoute}${id}`;
+
+  const indexRouteInProjects =
+    navigateTo === "/projects" ? "projects/compare-wot-app" : navigateTo;
+
   return (
-    <NavLink to={`${originRoute}${id}`}>
-      <button type="button">{icon && <div>{icon}</div>}</button>
+    <NavLink
+      className={clsx("navLink-inherit-btn-styles", { focus: focusState })}
+      to={indexRouteInProjects}
+    >
+      {icon && <div>{icon}</div>}
     </NavLink>
   );
 };
