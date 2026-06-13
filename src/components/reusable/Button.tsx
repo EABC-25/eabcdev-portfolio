@@ -10,31 +10,33 @@ interface Props {
 }
 
 const Button: React.FC<Props> = ({ originRoute, id, icon }) => {
-  const [focusState, setFocusState] = useState(true);
+  const [activeState, setActiveState] = useState(true);
   const loc = useLocation();
-
-  useEffect(() => {
-    const pathParams =
-      loc.pathname === "/"
-        ? [""]
-        : loc.pathname.split("/").filter(id => {
-            if (id) return id;
-          });
-
-    if (!pathParams.includes(id)) {
-      console.log(pathParams);
-      setFocusState(false);
-    }
-  }, [loc]);
 
   const navigateTo = `${originRoute}${id}`;
 
   const indexRouteInProjects =
     navigateTo === "/projects" ? "projects/compare-wot-app" : navigateTo;
 
+  useEffect(() => {
+    const pathParams =
+      loc.pathname === "/"
+        ? [""]
+        : loc.pathname.split("/").filter(path => {
+            if (path) return path;
+          });
+    if (!pathParams.includes(id)) {
+      setActiveState(false);
+    } else {
+      setActiveState(true);
+    }
+  }, [loc]);
+
   return (
     <NavLink
-      className={clsx("navLink-inherit-btn-styles", { focus: focusState })}
+      className={clsx("navLink-inherit-btn-styles", {
+        "el-active": activeState,
+      })}
       to={indexRouteInProjects}
     >
       {icon && <div>{icon}</div>}

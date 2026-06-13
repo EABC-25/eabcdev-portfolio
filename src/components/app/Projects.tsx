@@ -1,5 +1,5 @@
-import { type JSX, useEffect } from "react";
-import { Outlet, useNavigate } from "react-router";
+import { type JSX } from "react";
+import { Outlet } from "react-router";
 import { GiTank } from "react-icons/gi";
 import { TbHexagonLetterY, TbDots, TbSql } from "react-icons/tb";
 
@@ -20,23 +20,17 @@ const worksContent: ContentTypes[] = [
     id: "y-app",
     icon: <TbHexagonLetterY />,
   },
-  {
-    id: "sqltools",
-    icon: <TbSql />,
-  },
-  {
-    id: "ongoing works..",
-    icon: <TbDots />,
-  },
+  // {
+  //   id: "sqltools",
+  //   icon: <TbSql />,
+  // },
+  // {
+  //   id: "ongoing works..",
+  //   icon: <TbDots />,
+  // },
 ];
 
 const Projects: React.FC = () => {
-  // const navigate = useNavigate();
-
-  // useEffect(() => {
-  //   navigate("/projects/compare-wot-app");
-  // }, []);
-
   const originRoute = "/projects/";
   return (
     <div className="content-div">

@@ -303,8 +303,7 @@ li {
 }
 
 .navLink-inherit-btn-styles:hover,
-.navLink-inherit-btn-styles:focus,
-.navLink-inherit-btn-styles.focus {
+.navLink-inherit-btn-styles.el-active {
   color: white;
   background-color: rgba(114, 113, 113, 0.2);
 }
