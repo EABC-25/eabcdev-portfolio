@@ -18,10 +18,10 @@ const projectsContent: ContentTypes[] = [
   //   id: "sqltools",
   //   icon: <TbSql />,
   // },
-  // {
-  //   id: "ongoing works..",
-  //   icon: <TbDots />,
-  // },
+  {
+    id: "in-progress",
+    icon: <TbDots />,
+  },
 ];
 
 const Projects: React.FC = () => {

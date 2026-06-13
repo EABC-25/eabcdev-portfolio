@@ -1,4 +1,4 @@
-const OngoingWork: React.FC = () => {
+const InProgress: React.FC = () => {
   return (
     <div className="content-div">
       <p className="poppins-italic">Next project is still under works...</p>
@@ -6,4 +6,4 @@ const OngoingWork: React.FC = () => {
   );
 };
 
-export default OngoingWork;
+export default InProgress;

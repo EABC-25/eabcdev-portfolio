@@ -5,8 +5,9 @@ import "./App.css";
 import MainLayout from "./components/layouts/MainLayout";
 import Home from "./components/app/Home";
 import Projects from "./components/app/Projects";
-import CompareWot from "./components/works/CompareWot";
-import Y from "./components/works/Y";
+import CompareWot from "./components/projects/CompareWot";
+import Y from "./components/projects/Y";
+import InProgress from "./components/projects/InProgress";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
         children: [
           { path: "compare-wot-app", element: <CompareWot /> },
           { path: "y-app", element: <Y /> },
+          { path: "in-progress", element: <InProgress /> },
         ],
       },
     ],
