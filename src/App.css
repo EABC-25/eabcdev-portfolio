@@ -148,13 +148,6 @@ main {
   background-color: rgb(61, 61, 61, 0.4);
 }
 
-/* TOBEDEPRECIATED */
-.window {
-  height: 100%;
-  width: 100%;
-  background-color: transparent;
-}
-
 .main-layout {
   height: 100%;
   width: 100%;
@@ -179,7 +172,6 @@ main {
 .home-title {
   font-size: 4rem;
   margin: auto;
-  /* margin: auto; */
 }
 
 .container {
@@ -212,17 +204,6 @@ li {
   color: #ffffff;
   padding: 0 5px;
   font-weight: 500;
-}
-
-.hero-image-div {
-  height: 400px;
-  width: 100%;
-  display: flex;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  /* margin: 20px auto; */
-  opacity: 0.6;
 }
 
 .y-hero {
@@ -263,8 +244,6 @@ li {
 .asset-container {
   display: flex;
   flex-direction: column;
-  /* padding: 10px; */
-  /* gap: 10px; */
 }
 
 .selection {
@@ -333,13 +312,6 @@ li {
     height: 100%;
     width: 80%;
   }
-  /* .hero-container {
-    height: 400px;
-    width: 400px;
-    float: right;
-    line-height: 1;
-    margin: 0 20px;
-  } */
   .y-hero {
     height: 300px;
     width: 400px;

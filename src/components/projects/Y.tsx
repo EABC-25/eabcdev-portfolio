@@ -139,11 +139,17 @@ const Y: React.FC = () => {
             </div>
             <br />
             <p>
-              <span>Repo:</span>
+              <span>Code:</span>
             </p>
             <div className="div-pleft">
               <p>
-                Frontend:<span>(set at private for now)</span>
+                Frontend:{" "}
+                <a
+                  target="_blank"
+                  href="https://github.com/EABC-25/twitter-clone-frontend"
+                >
+                  Link
+                </a>
               </p>
               <p>
                 Backend:{" "}
@@ -151,7 +157,7 @@ const Y: React.FC = () => {
                   target="_blank"
                   href="https://github.com/EABC-25/twitter-clone-backend"
                 >
-                  github.com/EABC-25/twitter-clone-backend
+                  Link
                 </a>
               </p>
             </div>

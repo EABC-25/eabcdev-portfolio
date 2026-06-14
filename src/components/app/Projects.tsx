@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
 import { GiTank } from "react-icons/gi";
-import { TbHexagonLetterY, TbDots, TbSql } from "react-icons/tb";
+import { TbHexagonLetterY, TbDots } from "react-icons/tb";
 
 import { type ContentTypes } from "../types/types";
 import Panel from "../reusable/Panel";
@@ -14,10 +14,6 @@ const projectsContent: ContentTypes[] = [
     id: "y-app",
     icon: <TbHexagonLetterY />,
   },
-  // {
-  //   id: "sqltools",
-  //   icon: <TbSql />,
-  // },
   {
     id: "in-progress",
     icon: <TbDots />,
